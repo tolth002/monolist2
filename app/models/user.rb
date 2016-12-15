@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
 
   has_many :ownerships , foreign_key: "user_id", dependent: :destroy
   has_many :items ,through: :ownerships
+  
 
 
   # 他のユーザーをフォローする
